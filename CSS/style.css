@@ -1,0 +1,167 @@
+body{
+    margin:0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+.bg-main{
+    background-color:#363062;
+}
+.bg-secondary{
+    background-color:#F5E8C7;
+    color:#134B70;
+}
+.bg-side{
+    background-color: #363062;
+}
+.bg-Second{
+    background-color:#EEEEEE;
+    color:#508C9B;
+}
+.bg-SecondText{
+    color:#EEEEEE;
+}
+.contentBox{
+    top:0;
+    left:0;
+    opacity:0;
+}
+.contentBox p{
+    font-size:15px;
+}
+.img{
+    height:400px;
+}
+.secondSide{
+    width:23%;
+}
+ul li{
+    padding-block:15px;
+}
+ul li a{
+text-decoration: none;
+color: #EEEEEE;
+}
+.social i{
+    color: #EEEEEE;
+}
+
+.closeModal i{
+    color:#201E43;
+}
+.footerIcon i{
+    color:#201E43;
+}
+#close{
+    display:none;
+}
+.firstSide{
+    display:none;
+}
+.box{
+    overflow: hidden;
+}
+.box:hover .contentBox{
+opacity:1;
+color:#EEEEEE;
+}
+.box:hover .imgBox{
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.imgBox{
+    overflow: hidden;
+}
+.box:hover img{
+    transform: scale(1.05);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.2);
+    filter: blur(8px);
+    transition: transform .5s ease-in-out;
+}
+ul li:hover a{
+    color:#F5E8C7;
+}
+.rate{
+    height:50px;
+    width:50px;
+    border:1px solid #134B70;
+}
+
+#contact{
+z-index:1;
+
+.form-control{
+ border:none !important; 
+ border-bottom:1px solid #F5E8C7 !important;
+ background-color:transparent;
+ border-radius:0;
+ text-align: center;
+}
+::placeholder{
+    color: #EEEEEE;
+}
+.btn{
+    background-color:#EEEEEE;
+    color:#363062;
+}
+.fade-in {
+    animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+.error {
+    color:rgba(255, 0, 0, 0.699);
+    font-size: 0.875em;
+    display: none;
+}
+}
+
+
+
+
+/* ------media query ---------------     */
+
+@media all and (max-width:575px){
+    .secondSide{
+        width:50%;
+        background-color:#363062;
+    }
+    .closeModal i{
+        color:#EEEEEE!important;
+    }
+    .firstSide{
+        width:100%;
+    }
+    .footerIcon i,.logo{
+        display:none;
+    }
+
+}
+
+@media all and (min-width:576px) and (max-width:767px){
+.secondSide{
+    width:50%;
+}
+
+
+}
+@media all and (min-width:768) and (max-width:991){
+.secondSide{
+    width:50%;
+}
+}
+
+@media all and (min-width:992px) and (max-width:1199px){
+    .secondSide{
+        width:30%;
+    }
+
+}
+@media all and (min-width:1200px){
+  .secondSide{
+    width:24%;
+} 
+}
